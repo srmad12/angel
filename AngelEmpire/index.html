@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>✧ Angel Empire ✧ | انجل امباير</title>
+<meta name="description" content="انجل امباير: مجتمع ديسكورد للاعبين وصنّاع المحتوى وعشاق السهر. انضم عبر discord.gg/xRN">
+<meta property="og:type" content="website">
+<meta property="og:title" content="✧ Angel Empire ✧ | انجل امباير">
+<meta property="og:description" content="مجتمع ديسكورد للاعبين وصنّاع المحتوى. مجتمع فورتنايت نشط وإدارة منظمة.">
+<meta property="og:url" content="https://discord.gg/xRN">
+<meta name="theme-color" content="#0b0c10">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { ar: ['Cairo','sans-serif'], gothic: ['Cinzel','serif'] },
+  colors: { ink:'#0b0c10', coal:'#121318', slate2:'#1a1b23', silver:'#e8eaf0', fog:'#8f94a6' }
+}}}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0b0c10; color:#e8eaf0; font-family:'Cairo',sans-serif; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); overflow-x:hidden; }
+  .mist { position:fixed; inset:-20% -30%; pointer-events:none; z-index:0; opacity:.5;
+    background: radial-gradient(40% 30% at 20% 30%, rgba(200,205,220,.10), transparent 70%),
+                radial-gradient(45% 35% at 75% 60%, rgba(200,205,220,.08), transparent 70%),
+                radial-gradient(35% 25% at 50% 90%, rgba(200,205,220,.09), transparent 70%);
+    filter: blur(30px); animation: drift 26s ease-in-out infinite alternate; }
+  .mist.b { opacity:.35; animation-duration:38s; animation-direction:alternate-reverse; }
+  @keyframes drift { from { transform: translate3d(-4%,0,0) scale(1); } to { transform: translate3d(5%,-3%,0) scale(1.12); } }
+  .glass { background:rgba(26,27,35,.62); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border:1px solid rgba(232,234,240,.08); }
+  .card { background:#1a1b23; border:1px solid rgba(232,234,240,.07); transition: border-color .3s, box-shadow .3s; }
+  .card:hover { border-color: rgba(232,234,240,.25); box-shadow: 0 0 40px -12px rgba(232,234,240,.25); }
+  .cta { position:relative; background:linear-gradient(180deg,#f2f4f8,#c9ced9); color:#0b0c10; font-weight:800;
+    box-shadow:0 0 24px rgba(232,234,240,.35), 0 0 60px rgba(232,234,240,.12); animation: pulse 3.2s ease-in-out infinite; transition: transform .25s, box-shadow .25s; }
+  .cta:hover { transform: translateY(-2px); box-shadow:0 0 34px rgba(255,255,255,.65), 0 0 90px rgba(232,234,240,.3); }
+  .cta:focus-visible, a:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+  @keyframes pulse { 50% { box-shadow:0 0 34px rgba(232,234,240,.55), 0 0 80px rgba(232,234,240,.2); } }
+  .float { animation: float 7s ease-in-out infinite; }
+  @keyframes float { 50% { transform: translateY(-8px); } }
+  .dot { width:9px; height:9px; border-radius:50%; display:inline-block; }
+  .dot.on { background:#3ba55d; box-shadow:0 0 8px #3ba55d; }
+  .dot.off { background:#80848e; }
+  .title { letter-spacing:.06em; text-shadow:0 0 28px rgba(232,234,240,.25); }
+  @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation:none !important; transition:none !important; } html{scroll-behavior:auto;} }
+</style>
+</head>
+<body class="font-ar antialiased">
+<div class="mist" aria-hidden="true"></div><div class="mist b" aria-hidden="true"></div>
+
+<!-- HERO -->
+<header class="relative z-10 max-w-3xl mx-auto">
+  <div class="relative h-56 sm:h-72 overflow-hidden sm:rounded-b-3xl">
+    <svg viewBox="0 0 800 300" preserveAspectRatio="xMidYMid slice" class="absolute inset-0 w-full h-full" role="img" aria-label="قلعة قوطية مغطاة بالضباب">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0c10"/><stop offset=".65" stop-color="#22242e"/><stop offset="1" stop-color="#3a3d4a"/></linearGradient>
+        <radialGradient id="moon"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        <linearGradient id="fogg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8cddb" stop-opacity="0"/><stop offset="1" stop-color="#c8cddb" stop-opacity=".35"/></linearGradient>
+      </defs>
+      <rect width="800" height="300" fill="url(#sky)"/>
+      <circle cx="600" cy="80" r="70" fill="url(#moon)"/><circle cx="600" cy="80" r="22" fill="#e8eaf0" opacity=".85"/>
+      <g fill="#15161d" opacity=".9"><path d="M0 230 L60 170 L90 200 L150 150 L220 205 L300 160 L380 210 L460 165 L540 215 L640 170 L720 205 L800 175 V300 H0Z"/></g>
+      <g fill="#0d0e13">
+        <path d="M300 300 V170 H322 V130 L331 96 L340 130 V170 H372 V120 L385 70 L398 120 V150 H420 V100 L428 60 L436 100 V150 H460 V130 L470 100 L480 130 V300Z"/>
+        <path d="M250 300 V200 H275 V180 L283 150 L291 180 V200 H310 V300Z"/>
+        <path d="M480 300 V190 H505 V165 L514 135 L523 165 V190 H550 V300Z"/>
+        <rect x="376" y="180" width="6" height="14" fill="#c8cddb" opacity=".55"/><rect x="424" y="140" width="5" height="12" fill="#c8cddb" opacity=".45"/>
+      </g>
+      <g fill="#07080b">
+        <path d="M0 300 V210 L14 200 L10 170 L26 195 L30 150 L44 190 L54 175 L60 300Z"/>
+        <path d="M120 300 V240 L132 215 L128 190 L142 215 L150 180 L160 220 L172 235 V300Z"/>
+        <path d="M660 300 V235 L672 205 L668 175 L684 205 L694 165 L704 210 L716 230 V300Z"/>
+        <path d="M740 300 V200 L752 182 L748 150 L764 180 L776 140 L788 185 L800 195 V300Z"/>
+      </g>
+      <rect y="190" width="800" height="110" fill="url(#fogg)"/>
+    </svg>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
+  </div>
+
+  <div class="px-5 -mt-14 sm:-mt-16 relative">
+    <div class="flex items-end gap-4">
+      <div class="float w-24 h-24 sm:w-28 sm:h-28 rounded-[26px] bg-coal border-4 border-ink shadow-[0_0_40px_rgba(232,234,240,.18)] overflow-hidden shrink-0">
+        <svg viewBox="0 0 100 100" class="w-full h-full" role="img" aria-label="ملاك مجنّح يخرج من الضباب">
+          <defs><linearGradient id="av" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2d38"/><stop offset="1" stop-color="#0b0c10"/></linearGradient>
+          <linearGradient id="avf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8cddb" stop-opacity="0"/><stop offset="1" stop-color="#c8cddb" stop-opacity=".7"/></linearGradient></defs>
+          <rect width="100" height="100" fill="url(#av)"/>
+          <circle cx="50" cy="30" r="26" fill="#e8eaf0" opacity=".08"/>
+          <g fill="#050609"><path d="M50 52 C34 34 14 30 6 22 C10 44 20 56 34 62 C24 62 16 60 10 58 C20 70 34 74 48 70Z"/><path d="M50 52 C66 34 86 30 94 22 C90 44 80 56 66 62 C76 62 84 60 90 58 C80 70 66 74 52 70Z"/>
+          <path d="M50 30 a7 7 0 1 1 0.1 0Z"/><path d="M41 44 H59 L63 84 H37Z"/></g>
+          <ellipse cx="50" cy="26" rx="10" ry="3" fill="none" stroke="#e8eaf0" stroke-width="1.2" opacity=".85"/>
+          <rect y="60" width="100" height="40" fill="url(#avf)"/>
+        </svg>
+      </div>
+      <div class="pb-1 min-w-0">
+        <h1 class="font-gothic font-bold text-2xl sm:text-4xl title leading-tight" dir="ltr">✧ Angel Empire ✧</h1>
+        <p class="text-fog text-sm sm:text-base">انجل امباير</p>
+      </div>
+    </div>
+
+    <div class="mt-4 flex flex-wrap items-center gap-2" dir="ltr" aria-live="polite">
+      <span class="glass rounded-full px-3.5 py-1.5 text-sm flex items-center gap-2"><i class="dot on"></i><b id="online">59</b> Online</span>
+      <span class="glass rounded-full px-3.5 py-1.5 text-sm flex items-center gap-2"><i class="dot off"></i><b id="members">264</b> Members</span>
+      <a href="https://discord.gg/xRN" target="_blank" rel="noopener" class="glass rounded-full px-3.5 py-1.5 text-sm text-silver hover:text-white transition">discord.gg/xRN</a>
+    </div>
+
+    <a href="https://discord.gg/xRN" target="_blank" rel="noopener" class="cta mt-6 w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-2xl px-8 py-4 text-lg">
+      انضم إلى الإمبراطورية | Join Server
+    </a>
+  </div>
+</header>
+
+<main class="relative z-10 max-w-3xl mx-auto px-5 pb-16">
+
+  <!-- ABOUT -->
+  <section class="mt-16" aria-labelledby="about">
+    <h2 id="about" class="text-2xl sm:text-3xl font-extrabold">عن السيرفر</h2>
+    <div class="glass rounded-3xl p-6 mt-4 leading-loose text-silver/90">
+      <p>أهلاً بك في <b class="text-white">انجل امباير</b>، مساحة راقية تجمع اللاعبين وصنّاع المحتوى وعشاق السهر في مكان واحد. سواء كنت تبحث عن فريق للعب، أو أصدقاء للسهرة، أو مجتمع يقدّر إبداعك، فمكانك بيننا.</p>
+      <div class="grid sm:grid-cols-2 gap-3 mt-5 text-sm">
+        <div class="card rounded-2xl p-4"><b class="text-white">احترام متبادل</b><br><span class="text-fog">نحافظ على أجواء ودّية يشعر فيها الجميع بالترحيب.</span></div>
+        <div class="card rounded-2xl p-4"><b class="text-white">رومات صوتية نشطة</b><br><span class="text-fog">جلسات لعب ودردشة صوتية على مدار الساعة.</span></div>
+        <div class="card rounded-2xl p-4"><b class="text-white">رتب حصرية</b><br><span class="text-fog">رتب خاصة للأعضاء المتفاعلين والداعمين.</span></div>
+        <div class="card rounded-2xl p-4"><b class="text-white">إدارة منظّمة</b><br><span class="text-fog">فريق واضح المهام يرد بسرعة على أي استفسار.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORTNITE -->
+  <section class="mt-16" aria-labelledby="fn">
+    <h2 id="fn" class="text-2xl sm:text-3xl font-extrabold">قسم فورتنايت</h2>
+    <p class="text-fog mt-2">مجتمع فورتنايت هو قلب السيرفر. تجمّعات وتحديات وفعاليات مستمرة.</p>
+    <div class="grid sm:grid-cols-2 gap-3 mt-5">
+      <article class="card rounded-2xl p-5"><h3 class="font-bold text-lg">Party Royale</h3><p class="text-fog text-sm mt-1">تجمّعات جماعية للاسترخاء والمرح بعيداً عن ضغط المباريات.</p></article>
+      <article class="card rounded-2xl p-5"><h3 class="font-bold text-lg">Custom Matchmaking</h3><p class="text-fog text-sm mt-1">غرف خاصة بأكواد مخصصة ينظّمها الأعضاء والإدارة.</p></article>
+      <article class="card rounded-2xl p-5"><h3 class="font-bold text-lg">Box Fights</h3><p class="text-fog text-sm mt-1">مواجهات سريعة داخل الصناديق لتطوير سرعة البناء والتصويب.</p></article>
+      <article class="card rounded-2xl p-5"><h3 class="font-bold text-lg">Zone Wars</h3><p class="text-fog text-sm mt-1">اختبر مهاراتك في القتال والتحكم بالمنطقة مع الفرق.</p></article>
+    </div>
+    <div class="glass rounded-2xl p-5 mt-3 text-sm leading-loose text-silver/90">
+      عرض خرائط <b class="text-white">UEFN</b> التي يصنعها الأعضاء، وتكوين الفرق والبحث عن زملاء، وبطولات ومسابقات وجوائز دورية.
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="mt-16" aria-labelledby="hl">
+    <h2 id="hl" class="text-2xl sm:text-3xl font-extrabold">مميزات المجتمع</h2>
+    <div class="grid sm:grid-cols-3 gap-3 mt-5">
+      <article class="card rounded-2xl p-5"><div class="text-2xl" aria-hidden="true">🎙️</div><h3 class="font-bold mt-2">رومات صوتية ودردشة</h3><p class="text-fog text-sm mt-1">قنوات صوتية وكتابية نشطة لكل اهتمام ووقت.</p></article>
+      <article class="card rounded-2xl p-5"><div class="text-2xl" aria-hidden="true">💎</div><h3 class="font-bold mt-2">مزايا البوست</h3><p class="text-fog text-sm mt-1">أكثر من 17 بوست يمنح السيرفر مزايا إضافية للجميع.</p></article>
+      <article class="card rounded-2xl p-5"><div class="text-2xl" aria-hidden="true">🛡️</div><h3 class="font-bold mt-2">إشراف عادل وصارم</h3><p class="text-fog text-sm mt-1">قوانين واضحة تُطبّق على الجميع بلا استثناء.</p></article>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="mt-16 text-center glass rounded-3xl p-8">
+    <h2 class="font-gothic text-2xl title" dir="ltr">✧ Angel Empire ✧</h2>
+    <p class="text-fog mt-2">مكانك محجوز بين الأعضاء.</p>
+    <a href="https://discord.gg/xRN" target="_blank" rel="noopener" class="cta mt-5 inline-flex items-center justify-center rounded-2xl px-8 py-4 text-lg">انضم إلى الإمبراطورية | Join Server</a>
+  </section>
+
+  <footer class="mt-10 text-center text-xs text-fog" dir="ltr">© <span id="yr"></span> Angel Empire · discord.gg/xRN</footer>
+</main>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // Live counts need a request to discord.com, which published pages block; the static snapshot in the HTML is shown instead.
+</script>
+</body>
+</html>
